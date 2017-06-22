@@ -31,15 +31,18 @@
 //
 
 .nav-tabs {
-  border-bottom: $nav-tabs-border-width solid $nav-tabs-border-color;
 
   .nav-item {
     margin-bottom: -$nav-tabs-border-width;
+    background-color: $superGreen;
   }
 
   .nav-link {
-    border: $nav-tabs-border-width solid transparent;
-    @include border-top-radius($nav-tabs-border-radius);
+    text-align: center;
+    padding: 25px 15px;
+    font-size: 24px;
+    color: #000;
+    font-family: $headings-font-family;
 
     @include hover-focus {
       border-color: $nav-tabs-link-hover-border-color $nav-tabs-link-hover-border-color $nav-tabs-border-color;
@@ -56,7 +59,6 @@
   .nav-item.show .nav-link {
     color: $nav-tabs-active-link-hover-color;
     background-color: $nav-tabs-active-link-hover-bg;
-    border-color: $nav-tabs-active-link-hover-border-color $nav-tabs-active-link-hover-border-color $nav-tabs-active-link-hover-bg;
   }
 
   .dropdown-menu {
